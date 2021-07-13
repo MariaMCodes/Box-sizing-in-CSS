@@ -1,0 +1,90 @@
+/* Box sizing in CSS */
+
+.violet {
+    background-color: rgb(146, 105, 146);
+    border: 3px solid purple;
+}
+
+.red {
+    background-color: rgb(243, 156, 156);
+    border: 3px solid red;
+}
+
+.blue {
+    background-color: rgb(144, 144, 241);
+    border: 3px solid blue;
+}
+
+.green {
+    background-color: rgb(151, 238, 151);
+    border: 3px solid green;
+}
+
+.orange {
+    background-color: rgb(252, 209, 129);
+    border: 3px solid orange;
+}
+
+
+/* Content dimensions and margins */
+
+
+/* In the example above:
+
+- the first paragraph has a blue border applied to it. Since the border is on a block-level box, it is rendered as a single, continuous box.
+- the second paragraph contains a span element with a green border applied to it. Since the border is on an inline-level box, the left and right borders are only drawn at the end, and only the top and bottom borders are drawn on each line of content. */
+
+
+/* Width calculations: block-level elements (constraint-based) */
+
+.width-auto {
+    width: auto;
+    margin: auto;
+}
+
+
+/* In the second case, when width is set and the margins are auto, center the box.
+The box width is fixed, and the margins are set so that the box is centered: */
+
+.margin-auto {
+    margin: auto;
+    width: 100px;
+}
+
+
+/* Of course, the problem with this method of centering is that the box width has to be set explicitly (and that you cannot center vertically, since a block formatting context positions block boxes sequentially from top to bottom). */
+
+.flush-right {
+    margin-left: auto;
+    margin-right: 5px;
+    width: 100px;
+}
+
+
+/* Width calculations: floating blocks and inline-block elements (shrink-to-fit) */
+
+.inline-block {
+    display: inline-block;
+}
+
+
+/* When the available width (blue) is less than the preferred width, but greater than or equal to the preferred minimum width (orange), the available width (> preferred minimum width) is used: */
+
+.big2 {
+    width: 130px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+
+/* When the available width (blue) is less than the preferred minimum width (orange) , the available width (< preferred minimum width) is used and the content may overflow: */
+
+.big3 {
+    width: 80px;
+}
+
+.inline-block {
+    display: inline-block;
+}
