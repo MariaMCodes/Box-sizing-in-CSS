@@ -88,3 +88,16 @@ The box width is fixed, and the margins are set so that the box is centered: */
 .inline-block {
     display: inline-block;
 }
+
+.embed-container {
+    position: relative;
+    width: 100%;
+    height: 500px;  /* Adjust based on content size */
+    overflow: hidden;
+  }
+  
+  .embed-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
