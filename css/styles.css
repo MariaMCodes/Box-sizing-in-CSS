@@ -99,5 +99,5 @@ The box width is fixed, and the margins are set so that the box is centered: */
   .embed-container iframe {
     width: 100%;
     height: 100%;
-    border: red 2px solid;
+    border: none;
   }
